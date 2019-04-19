@@ -11,7 +11,7 @@
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
 
-        // 打印主线程调用栈， BSLOG 打印当前线程，BSLOG_ALL 打印所有线程
+        // 打印主线程调用栈， AWLOG_Callstack_Current 打印当前线程，AWLOG_Callstack_ALL 打印所有线程
         AWLOG_Callstack_MAIN
 
     });
